@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatorio trabalho pratico Sensor Infravermelho Reflexivo</title>
+    <title>Relatório - Sensor Infravermelho Reflexivo</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Relatório do Projeto - Acender um led com um sensor Infravermelho Reflexivo.</h1>
+    <header>
+        <h1>Relatório do Projeto</h1>
+        <h2>Acender um LED com um Sensor Infravermelho Reflexivo</h2>
+    </header>
 
     <nav>
-        <h2>SUMÁRIO</h2>
+        <h3>Sumário</h3>
         <ul>
             <li><a href="#introducao">Introdução</a></li>
             <li><a href="#objetivos">Objetivos</a></li>
@@ -25,38 +28,40 @@
         </ul>
     </nav>
 
-    <section id="introducao">
-    <h2>1. Introdução</h2>
-    <p>Este Relatório descreve o projeto de controle de um Led com a utilização de um sensor infravermelho e um arduino, com o objetivo de desenvolver habilidades em eletrônica e programação.</p>
-    </section>
+    <main>
+        <section id="introducao">
+            <h2>1. Introdução</h2>
+            <p>Este relatório descreve o projeto de controle de um LED com a utilização de um sensor infravermelho e um Arduino, com o objetivo de desenvolver habilidades em eletrônica e programação.</p>
+        </section>
 
-    <section id="objetivos">
-    <h2>2. Objetivos</h2>
-    <p>O principal objetivo é fazer o controle do led RGB com a utilização de um sensor infravermelho em um microcontrolador Arduino.</p>
-    </section>
+        <section id="objetivos">
+            <h2>2. Objetivos</h2>
+            <p>O principal objetivo é fazer o controle do LED RGB com a utilização de um sensor infravermelho em um microcontrolador Arduino.</p>
+        </section>
 
-    <section id="materiais">
-        <h2>3. Materiais utilizados</h2>
-        <ul type="square">
-            <li>Arduino</li>
-            <li>LED normal ou LED RGB</li>
-            <li>1 Sensor infravermelho reflexivo</li>
-            <li>1 Resistor</li>
-            <li>Protoboard</li>
-            <li>Fios de conexão</li>
-        </ul>
-    </section>
+        <section id="materiais">
+            <h2>3. Materiais Utilizados</h2>
+            <ul>
+                <li>Arduino</li>
+                <li>LED normal ou LED RGB</li>
+                <li>1 Sensor infravermelho reflexivo</li>
+                <li>1 Resistor</li>
+                <li>Protoboard</li>
+                <li>Fios de conexão</li>
+            </ul>
+        </section>
 
-    <section id="diagrama">
-        <h2>4. Diagrama do circuito</h2>
-        <p>Abaixo está o diagrama do circuito projetado no Tinkercad:</p>
-    </section>
-    <img src="imgs/projetoIRthinkercad.png" alt="Diagrama do Circuito" />
+        <section id="diagrama">
+            <h2>4. Diagrama do Circuito</h2>
+            <p>Abaixo está o diagrama do circuito projetado no Tinkercad:</p>
+            <img src="imgs/projetoIRthinkercad.png" alt="Diagrama do Circuito">
+        </section>
 
-    <section id="codigo">
-        <h2>5. Código Fonte</h2>
-        <pre>
-            const int PinLed = 9;
+        <section id="codigo">
+            <h2>5. Código Fonte</h2>
+            <pre>
+<code>
+const int PinLed = 9;
 const int PinSensor = 8;
 int LeituraSensor;
 
@@ -80,46 +85,50 @@ void loop() {
 
   delay(100);
 }
-        </pre>
-    </section>
+</code>
+            </pre>
+        </section>
 
-    <section id="procedimentos">
-        <h2>6. Procedimentos</h2>
-        <p>O sensor infravermelho e o LED foram conectados aos pinos digitais do Arduino conforme o diagrama, e o código foi carregado na placa.</p>
-    </section>
+        <section id="procedimentos">
+            <h2>6. Procedimentos</h2>
+            <p>O sensor infravermelho e o LED foram conectados aos pinos digitais do Arduino conforme o diagrama, e o código foi carregado na placa.</p>
+        </section>
 
-    <section id="resultados">
-        <h2>7. Resultados</h2>
-        <p>O LED se acendia e apagava conforme um objeto não reflexivo/reflexivo passava em frente ao sensor.</p>
-    </section>
+        <section id="resultados">
+            <h2>7. Resultados</h2>
+            <p>O LED se acendia e apagava conforme um objeto não reflexivo/reflexivo passava em frente ao sensor.</p>
+        </section>
 
-    <section id="discussao">
-        <h2>8. Discussão</h2>
-        <p>O funcionamento do circuito aconteceu de forma satisfatoria e conforme o esperado.</p>
-    </section>
+        <section id="discussao">
+            <h2>8. Discussão</h2>
+            <p>O funcionamento do circuito aconteceu de forma satisfatória e conforme o esperado.</p>
+        </section>
 
-    <section id="conclusao">
-        <h2>9. Conclusão</h2>
-        <p>Após muitas tentativas e erros o projeto foi bem sucedido, permitindo a pratica dos conceitos de eletronica e programação.</p>
-    </section>
+        <section id="conclusao">
+            <h2>9. Conclusão</h2>
+            <p>Após muitas tentativas e erros, o projeto foi bem-sucedido, permitindo a prática dos conceitos de eletrônica e programação.</p>
+        </section>
 
-    <section id="referencias">
-        <h2>10. Referências</h2>
-        <p>Documentação do Arduino e materias utilizados no projeto.</p>
-    </section>
+        <section id="referencias">
+            <h2>10. Referências</h2>
+            <p>Documentação do Arduino e materiais utilizados no projeto.</p>
+        </section>
 
-        <h2>Perguntas</h2>
-        <ol>
-            <li>Qual o valor da corrente elétrica de um LED normal e um LED RGB? Um LED normal geralmente opera com uma corrente de cerca de <strong>20 mA</strong>, enquanto um LED RGB pode consumir até <strong>60 mA</strong> quando os três LEDs estão acesos simultaneamente.</li>
-            <li>Qual o valor da corrente elétrica de um sensor infravermelho reflexivo? Um sensor infravermelho reflexivo geralmente consome entre <strong>1 mA e 20 mA</strong>, dependendo do modelo específico. </li>
-        </ol>
+        <section id="perguntas">
+            <h2>Perguntas</h2>
+            <ol>
+                <li>Qual o valor da corrente elétrica de um LED normal e um LED RGB? Um LED normal geralmente opera com uma corrente de cerca de <strong>20 mA</strong>, enquanto um LED RGB pode consumir até <strong>60 mA</strong> quando os três LEDs estão acesos simultaneamente.</li>
+                <li>Qual o valor da corrente elétrica de um sensor infravermelho reflexivo? Um sensor infravermelho reflexivo geralmente consome entre <strong>1 mA e 20 mA</strong>, dependendo do modelo específico. </li>
+            </ol>
+        </section>
+    </main>
 
+    <footer>
+        <p>Relatório elaborado por [Leonardo, André, Luciano].</p>
+        <p>Disciplina: Desenvolvimento de Sistemas de Informação</p>
+        <p>Laboratório C38. 04/11/2024</p>
+    </footer>
+
+    <img src="imgs/arduinoIRfoto.jpg" style="width: 320px;" alt="Foto do Projeto">
 </body>
 </html>
-
-<footer>
-    <p>Relatório elaborado por [Leonardo, André, Luciano].</p>
-    <p>Diciplina: Desenvolvimento de sistemas de informação</p>
-    <p>Laboratório C38. 04/11/2024 </p>
-    </footer>
-    <img src="imgs/arduinoIRfoto.jpg" style="width: 320px;" alt="Diagrama do Circuito" />
